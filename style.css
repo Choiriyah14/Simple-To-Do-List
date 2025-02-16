@@ -1,0 +1,364 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  }
+
+  body {
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .profile-name {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .profile-name h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: beige;
+  }
+
+  .profile-name p {
+    font-size: 14px;
+    font-weight: 300;
+    color: beige;
+  }
+
+  .date {
+    font-size: 12px;
+    font-weight: 400;
+    color: beige;
+    margin-left: 168px;
+    margin-bottom: 15px;
+  }
+
+  .title h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    color: beige;
+  }
+
+  .form-group {
+    display:flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  #priority {
+    width: 300px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(104, 101, 101);
+    background-color: beige;
+    box-shadow: 0 2px 5px black;
+  }
+
+  #due-date {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding:0 5px 0 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(104, 101, 101);
+    background-color: beige;
+    box-shadow: 0 2px 5px black;
+  }
+
+  .wrapper {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  #task {
+    width: 470px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(104, 101, 101);
+    background-color: beige;
+    box-shadow: 0 2px 5px black;
+  }
+
+  .wrapper button {
+    width: 80px;
+    height: 35px;
+    margin-top: 2px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: beige;
+    background-color: #007BFF;
+    cursor: pointer;
+    box-shadow: 0 2px 5px black;
+  }
+
+  .wrapper button:hover {
+    background-color: #105aa8; 
+  }
+
+  .task-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  .tasks h2 {
+    font-size: 18px;
+    text-align: center;
+    color: beige;
+    text-decoration: underline;  
+  }
+
+  .clear-tasks {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .task-list {
+    display: flex;
+    text-decoration: none;
+  }
+
+  #todo-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  #finished-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  #clear-btn {
+    width: 600px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: beige;
+    background-color: #007BFF;
+    cursor: pointer;
+    box-shadow: 0 2px 5px black;
+  }
+
+  #clear-btn:hover {
+    background-color: #105aa8; 
+  }
+  
+  .task-item {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    margin: 5px 0;
+  }
+
+  .task-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .check-btn {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .task-text {
+    flex: 1;
+    font-size: 14px;
+    color:rgb(104, 101, 101);
+  }
+
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-left: 10px;
+  }
+
+  .delete-icon:hover {
+    color: darkred;
+  }
+
+  .completed {
+    text-decoration: line-through; 
+    color: gray; 
+  }
+  
+  @media screen and (max-width: 480px){
+    body {
+        background-color: teal;
+        display: flex;
+        justify-content: flex-start;
+        min-height: 100vh;
+      }
+
+    .container{
+        margin-right: 50px;
+        width: 360px;
+        height: auto;
+    }
+
+    .profile-section{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .profile-image img{
+        width: 80px;
+        height: 80px;
+        margin-left: 125px;
+    }
+
+    .profile-name{
+        align-items: center;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    
+    .profile-name h2{
+        width: 250px;
+        font-size: 20px;
+        font-weight: 600;
+        color: beige;
+    }
+    
+    .profile-name p{
+        font-size: 16px;
+        font-weight: 300;
+        color: beige;
+        margin-left: 15px;
+    }
+    
+    .date{
+        font-size: 12px;
+        font-weight: 400;
+        color: beige;
+        margin-top: 10px;
+        margin-left: 98px;
+    }
+
+    .title h2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    .form-group{
+        display:flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 20px;
+    }
+    
+    #priority{
+        width: 330px;
+        height: 40px;
+    }
+    
+    #due-date{
+        width: 330px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .wrapper{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    
+    #task{
+        width: 330px;
+        height: 40px;
+    }
+    
+    .wrapper button{
+        width: 330px;
+        height: 35px;
+        cursor: pointer;
+    }
+    
+    .wrapper button:hover {
+        background-color: #105aa8; 
+    }
+    
+    .task-content{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .clear-tasks{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #clear-btn{
+        width: 100px;
+        height: 35px;
+    }
+    
+  }
